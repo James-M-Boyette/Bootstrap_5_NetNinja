@@ -1,0 +1,179 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Net Ninja Pro - the Book</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/global.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Navbar Insert ... -->
+      <div id="navbarInsert">A NAVBAR should be displayed here ...</div>
+
+      <!-- _ -->
+      <article id="demo-grid">
+        <h1>Bootstrap 'Grid' Layout</h1>
+        <p class="lead">Video #7</p>
+
+        <div id="bootstrap-headings" class="demo-section">
+          <div class="container-lg my-5">
+            <h3 class="sub-heading">Basic Grid:</h3>
+            <p class="lead">
+              Equal space is allocated to each element, from Bootstrap's 12
+              columns
+            </p>
+            <div class="row">
+              <div class="col">
+                <div class="p-5 bg-primary text-light">col 1</div>
+              </div>
+              <div class="col">
+                <div class="p-5 bg-primary text-light">col 2</div>
+              </div>
+              <div class="col">
+                <div class="p-5 bg-primary text-light">col 3</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-lg my-5">
+            <h3 class="sub-heading">Column Widths:</h3>
+            <p class="lead">
+              First element is given 6 columns-worth of width, and the others
+              are given 3 each
+            </p>
+            <div class="row">
+              <div class="col-6">
+                <div class="p-5 bg-primary text-light">col 1</div>
+              </div>
+              <div class="col-3">
+                <div class="p-5 bg-primary text-light">col 2</div>
+              </div>
+              <div class="col-3">
+                <div class="p-5 bg-primary text-light">col 3</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-lg my-5">
+            <h3 class="sub-heading">Responsive Column Widths:</h3>
+            <p class="lead">
+              Same as above *but* with additional 'responsive' settings (when
+              small, *each* gets 4 columns)
+            </p>
+            <div class="row gy-3">
+              <!-- manually change gutter using g{d}-{n} -->
+              <div class="col-sm-4 col-lg-6">
+                <div class="p-5 bg-primary text-light">col 1</div>
+              </div>
+              <div class="col-sm-4 col-lg-3">
+                <div class="p-5 bg-primary text-light">col 2</div>
+              </div>
+              <div class="col-sm-4 col-lg-3">
+                <div class="p-5 bg-primary text-light">col 3</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-lg my-5">
+            <h3 class="sub-heading">Justifying Columns:</h3>
+            <p class="lead">"Center"</p>
+            <div class="row justify-content-center">
+              <!-- j-c-end, j-c-start, j-c-between, j-c-around -->
+              <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 1</div>
+              </div>
+              <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 2</div>
+              </div>
+              <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 3</div>
+              </div>
+            </div>
+
+            <br />
+            <p class="lead">"End"</p>
+            <div class="row justify-content-end">
+              <!-- j-c-end, j-c-start, j-c-between, j-c-around -->
+              <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 1</div>
+              </div>
+              <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 2</div>
+              </div>
+              <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 3</div>
+              </div>
+            </div>
+
+            <br />
+            <p class="lead">"Start"</p>
+            <div class="row justify-content-start">
+              <!-- j-c-end, j-c-start, j-c-between, j-c-around -->
+              <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 1</div>
+              </div>
+              <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 2</div>
+              </div>
+              <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 3</div>
+              </div>
+            </div>
+
+            <br />
+            <p class="lead">"Between"</p>
+            <div class="row justify-content-between">
+              <!-- j-c-end, j-c-start, j-c-between, j-c-around -->
+              <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 1</div>
+              </div>
+              <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 2</div>
+              </div>
+              <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 3</div>
+              </div>
+            </div>
+
+            <br />
+            <p class="lead">"Around"</p>
+            <div class="row justify-content-around">
+              <!-- j-c-end, j-c-start, j-c-between, j-c-around -->
+              <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 1</div>
+              </div>
+              <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 2</div>
+              </div>
+              <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#navbarInsert").load("./navbar.html");
+      });
+    </script>
+  </body>
+</html>
