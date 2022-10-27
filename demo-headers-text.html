@@ -10,45 +10,53 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./assets/global.css" />
   </head>
   <body>
     <main>
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="./basic-demo.html">Basic Demo</a>
-      </nav>
-      <article id="">
-        <h1>Boostrap 5 Tutorial</h1>
+      <!-- Navbar Insert ... -->
+      <div id="navbarInsert">A NAVBAR should be displayed here ...</div>
+
+      <!-- Bootstrap Headers + Text Demo -->
+      <article id="demo-headers-text">
+        <h1>Boostrap Headers & Text</h1>
+        <p class="lead">Video #3</p>
 
         <div id="bootstrap-headings" class="demo-section">
-          
           <!--  heading tags -->
-          <h3 class="sub-heading">Vanilla "bootstrap" styling for 'h' tags:</h2>
+          <h3 class="sub-heading">Vanilla "bootstrap" styling for 'h' tags:</h3>
 
           <h1>this is bootstrap's h1</h1>
           <h2>this is bootstrap's h2</h2>
           <h3>this is bootstrap's h3</h3>
-          <h2 class="h3">this is an h2, but with an <b>h3</b> bootstrap class</h2>
+          <h2 class="h3">
+            this is an h2, but with an <b>h3</b> bootstrap class
+          </h2>
           <p class="lead">
-            This is Bootstrap's `.lead` class - it serves as a sort of "sub-heading"
+            This is Bootstrap's `.lead` class - it serves as a sort of
+            "sub-heading"
           </p>
 
           <!-- display headings -->
-          <h3 class="sub-heading">These are bootstrap's 'display' class:</h2>
+          <h3 class="sub-heading">These are bootstrap's 'display' class:</h3>
 
           <h1 class="display-1">'display 1' class on an < h1> tag</h1>
           <h1 class="display-3">'display 3' class on an < h1> tag</h1>
           <h1 class="display-6">'display 6' class on an < h1> tag</h1>
           <p class="display-1">< p> tag with display-1 class</p>
-          
         </div>
 
         <div id="bootstrap-text" class="demo-section">
           <!-- lead text & alignment -->
-          <h3 class="sub-heading">`.text-_` - Bootstrap's version of 'justify'</h2>
+          <h3 class="sub-heading">
+            `.text-_` - Bootstrap's version of 'justify'
+          </h3>
 
-          
           <p class="lead text-center">this text is centered</p>
           <p class="lead text-end">this text is aligned to the "end"</p>
           <p class="lead text-start">
@@ -56,8 +64,8 @@
             <!-- Note: could also just drop
             `text-start`, since the vanilla css is the same -->
           </p>
-        
-          <h3 class="sub-heading">Bootstrap's text stylings</h2>
+
+          <h3 class="sub-heading">Bootstrap's text stylings</h3>
           <!-- text decoration & font weight -->
           <p class="text-decoration-underline">this is underlined text</p>
           <p class="text-decoration-line-through">this is line-through text</p>
@@ -85,5 +93,10 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#navbarInsert").load("./navbar.html");
+      });
+    </script>
   </body>
 </html>
