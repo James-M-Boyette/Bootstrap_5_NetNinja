@@ -1,0 +1,11 @@
+{
+  "name": "Bootstrap_5_(NetNinja)",
+  "version": "1.0.0",
+  "description": "bootstrap_tutorial",
+  "main": "index.html",
+  "repository": "https://github.com/sou7hernsaint/Bootstrap_5_NetNinja.git",
+  "author": "James Boyette <inquiries@james-boyette.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {}
+}
