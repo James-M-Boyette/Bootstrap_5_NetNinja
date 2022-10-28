@@ -79,7 +79,31 @@ This is a list of the chapter topics included in this tutorial series, for quick
 
 ## Video #16, "Modals"
 
-0. "Modal" ... _->_ _Synthesis: 'Get Updates' section_
+0. "Modals" ... _->_ _Synthesis: 'Get Updates' section_
+
+## Video #17, "offCanvas"
+
+0. "offCanvas" ... _->_ _Synthesis: 'Side Panel' section_
+
+## Video #18, "Dropdowns"
+
+0. "Dropdowns" ... _->_ _Synthesis: 'Side Panel' section_
+
+## Video #19, "Customizing Bootstrap"
+
+> Rewatch this later for info ...
+
+0. ""
+1. "" _->_ _(0:00)_
+2. "" _->_ _(0:00)_
+3. "" _->_ _(0:00)_
+4. "" _->_ _(0:00)_
+5. "" _->_ _(0:00)_
+6. "" _->_ _(0:00)_
+
+## Video #20, "Tabs"
+
+0. "Dropdowns" ... _->_ _Demo-tabs_
 
 ## Video #13
 
