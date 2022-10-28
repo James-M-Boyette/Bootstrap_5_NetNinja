@@ -67,15 +67,19 @@ This is a list of the chapter topics included in this tutorial series, for quick
 
 ## Video #13, "Bootstrap Icons"
 
-0. "Icons" ... _->_ _Synthesis: (used multiple places)_
+0. "Icons" ... _->_ _Synthesis: (used in "Intro" and "Accordian"/"Inside the Book" sections)_
 
 ## Video #14, "Working With Forms"
 
 0. "Forms" ... _->_ _Synthesis: 'Contact Form' section_
 
-## Video #14, "Working With Forms"
+## Video #15, "Tooltips"
 
-0. "Forms" ... _->_ _Synthesis 'Reviews List' section_
+0. "Tooltips" ... _->_ _Synthesis: (used in "Intro" and "Accordian"/"Inside the Book" sections)_
+
+## Video #16, "Modals"
+
+0. "Modal" ... _->_ _Synthesis: 'Get Updates' section_
 
 ## Video #13
 

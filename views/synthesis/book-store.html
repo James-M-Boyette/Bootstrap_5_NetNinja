@@ -45,7 +45,20 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laboriosam, dignissimos?
               </p>
-              <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+              <div class="d-grid gap-2 d-md-block col-4">
+                <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+                <!-- open sidebar / offcanvas -->
+                <a
+                  href="#sidebar"
+                  class="btn btn-secondary mt-3 btn-lg"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  role="button"
+                  aria-controls="sidebar"
+                >
+                  Explore my other books !
+                </a>
+              </div>
             </div>
             <div class="col-md-5 text-center d-none d-md-block">
               <!-- Tooltip -->
@@ -543,7 +556,7 @@
         </div>
       </section>
 
-      <!-- get updates / modal trigger -->
+      <!-- "Get Updates" (modal trigger) -->
       <section class="bg-light">
         <div class="container">
           <div class="text-center">
@@ -573,7 +586,7 @@
         </div>
       </section>
 
-      <!-- modal itself -->
+      <!-- the modal itself ... -->
       <div
         class="modal fade"
         id="reg-modal"
@@ -617,6 +630,34 @@
           </div>
         </div>
       </div>
+
+      <!-- "Side Panel" / offcanvas -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="sidebar"
+        aria-labelledby="sidebar-label"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In minima
+            ducimus excepturi quasi tempore fugit quis voluptatibus aut error
+            possimus, tenetur natus magni quam voluptatem quae eligendi
+            repudiandae delectus eaque!
+          </p>
+        </div>
+      </div>
+
+      <!--  -->
     </main>
     <!-- Bootstrap JavaScripting -->
     <script
@@ -628,6 +669,12 @@
     <script type="text/javascript">
       $(function () {
         $("#navbarInsert").load("/components/navbar.html");
+      });
+    </script>
+    <!-- jQuery for Modal Insertion -->
+    <script type="text/javascript">
+      $(function () {
+        $("#modalInsert").load("/components/modal.html");
       });
     </script>
     <!-- Tooltip Script -->
