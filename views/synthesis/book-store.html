@@ -22,6 +22,9 @@
       .accordian-button-margin-correction {
         margin-left: 0px !important;
       }
+      .tooltip.left {
+        margin-left: -10px;
+      }
     </style>
   </head>
   <body>
@@ -45,11 +48,19 @@
               <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
             </div>
             <div class="col-md-5 text-center d-none d-md-block">
-              <img
-                src="/assets/ebook-cover.png"
-                class="img-fluid"
-                alt="ebook"
-              />
+              <!-- Tooltip -->
+              <!--    Note: "tt" isn't a Bootstrap class, but one we made bespoke -->
+              <span
+                class="tt"
+                data-bs-placement="bottom"
+                title="Net Ninja Book Cover"
+              >
+                <img
+                  src="/assets/ebook-cover.png"
+                  class="img-fluid"
+                  alt="ebook"
+                />
+              </span>
             </div>
           </div>
         </div>
@@ -332,7 +343,7 @@
         </div>
       </section>
 
-      <!-- reviews list -->
+      <!-- "Reviews List" -->
       <section id="reviews" class="bg-light">
         <div class="container-lg">
           <div class="text-center">
@@ -434,8 +445,15 @@
         </div>
       </section>
 
-      <!-- contact form -->
-      <!-- form-control, form-label, form-select, input-group, input-group-text -->
+      <!-- "Contact Form" -->
+
+      <!-- Elements Covered:  
+            - form-control, 
+            - form-label, 
+            - form-select, 
+            - input-group, 
+            - input-group-text
+      -->
       <section id="contact">
         <div class="container-lg">
           <div class="text-center">
@@ -449,6 +467,7 @@
               <form>
                 <label for="email" class="form-label">Email address:</label>
                 <div class="input-group mb-4">
+                  <!-- This is the shaded icon to the left of the input field ... -->
                   <span class="input-group-text">
                     <i class="bi bi-envelope-fill text-secondary"></i>
                   </span>
@@ -458,6 +477,16 @@
                     class="form-control"
                     placeholder="e.g. mario@example.com"
                   />
+                  <!-- tooltip -->
+                  <span class="input-group-text">
+                    <span
+                      class="tt"
+                      data-bs-placement="right"
+                      title="Enter an email address we can reach you at 😄"
+                    >
+                      <i class="bi bi-question-circle text-muted"></i>
+                    </span>
+                  </span>
                 </div>
                 <label for="name" class="form-label">Name:</label>
                 <div class="mb-4 input-group">
@@ -470,6 +499,16 @@
                     class="form-control"
                     placeholder="e.g. Mario"
                   />
+                  <!-- tooltip -->
+                  <span class="input-group-text">
+                    <span
+                      class="tt"
+                      data-bs-placement="right"
+                      title="What name can we use when referring to you?"
+                    >
+                      <i class="bi bi-question-circle text-muted"></i>
+                    </span>
+                  </span>
                 </div>
                 <label for="subject" class="form-label"
                   >What is your question about?</label
@@ -505,7 +544,79 @@
       </section>
 
       <!-- get updates / modal trigger -->
-      <!-- _ -->
+      <section class="bg-light">
+        <div class="container">
+          <div class="text-center">
+            <h2>Stay in The Loop</h2>
+            <p class="lead">Get the latest updates as they happen...</p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <p class="text-muted my-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                exercitationem voluptatibus porro, hic asperiores fuga illo
+                voluptates obcaecati deleniti veritatis sunt saepe quasi
+                deserunt ex ipsum. Est possimus, aspernatur, vitae eligendi rem
+                odit quaerat, ipsum pariatur ratione maxime delectus fuga minus
+                accusamus dolores iusto maiores accusantium cumque magnam
+                placeat quia!
+              </p>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#reg-modal"
+              >
+                Register for Updates
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- modal itself -->
+      <div
+        class="modal fade"
+        id="reg-modal"
+        tabindex="-1"
+        aria-labelledby="modal-title"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-title">
+                Get the Latest Updates
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                exercitationem laboriosam nihil minus voluptatibus harum aliquam
+                consequatur pariatur inventore dignissimos illum excepturi
+                ratione ipsum sit iusto alias eligendi fugit laborum?
+              </p>
+              <label for="modal-email" class="form-label"
+                >Your email address:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="modal-email"
+                placeholder="e.g. mario@example.com"
+              />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- Bootstrap JavaScripting -->
     <script
@@ -517,6 +628,13 @@
     <script type="text/javascript">
       $(function () {
         $("#navbarInsert").load("/components/navbar.html");
+      });
+    </script>
+    <!-- Tooltip Script -->
+    <script>
+      const tooltips = document.querySelectorAll(".tt");
+      tooltips.forEach((t) => {
+        new bootstrap.Tooltip(t);
       });
     </script>
   </body>

@@ -47,27 +47,35 @@ This is a list of the chapter topics included in this tutorial series, for quick
 
 ## Video #8, "Grid Layout (part #2)"
 
-0. "Main Image & Intro Text" ... _->_ _Synthesis 'Intro' section_
+0. "Main Image & Intro Text" ... _->_ _Synthesis: 'Intro' section_
 
 ## Video #9, "Navbars"
 
-0. "NavBars" ... _->_ _Synthesis 'Navbar' section_
+0. "NavBars" ... _->_ _Synthesis: 'Navbar' section_
 
 ## Video #10, "Cards"
 
-0. "Cards" ... _->_ _Synthesis 'Pricing Plans' section_
+0. "Cards" ... _->_ _Synthesis: 'Pricing Plans' section_
 
 ## Video #11, "Accordians"
 
-0. "Accordians" ... _->_ _Synthesis 'Inside the Book...' section_
+0. "Accordians" ... _->_ _Synthesis: 'Inside the Book...' section_
 
 ## Video #12, "List Groups"
 
-0. "List Groups" ... _->_ _Synthesis 'Reviews List' section_
+0. "List Groups" ... _->_ _Synthesis: 'Reviews List' section_
 
 ## Video #13, "Bootstrap Icons"
 
-0. "Icons" ... _->_ _Synthesis 'Reviews List' section_
+0. "Icons" ... _->_ _Synthesis: (used multiple places)_
+
+## Video #14, "Working With Forms"
+
+0. "Forms" ... _->_ _Synthesis: 'Contact Form' section_
+
+## Video #14, "Working With Forms"
+
+0. "Forms" ... _->_ _Synthesis 'Reviews List' section_
 
 ## Video #13
 
