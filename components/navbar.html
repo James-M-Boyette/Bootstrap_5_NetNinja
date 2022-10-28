@@ -7,67 +7,91 @@
       <a href="./demo-containers.html">Demo: Containers</a>
     </nav> -->
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <!-- Hamburger for Mobile -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Navbar for larger screens -->
-      <div
-        class="collapse navbar-collapse justify-content-center"
-        id="navbarSupportedContent"
-      >
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              data-bs-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Bootstrap Demos:
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
+      <div class="container-xxl">
+        <!-- Navbar brand / title; "linked" to Home, currently -->
+        <a class="navbar-brand" href="/index.html">
+          <span class="text-secondary fw-bold"> Bootstrap 5 Demos </span>
+        </a>
+        <!-- Hamburger toggle button for mobile nav -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <!-- Drop-Down Menu: DEMOs -->
+            <li class="nav-item dropdown">
               <a
-                class="dropdown-item"
-                href="/views/demos/demo-headers-text.html"
-                >Headers & Text</a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
-              <a class="dropdown-item" href="/views/demos/demo-buttons.html"
-                >Buttons</a
+                Bootstrap Demos:
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
               >
+                <a
+                  class="dropdown-item"
+                  href="/views/demos/demo-headers-text.html"
+                  >Headers & Text</a
+                >
+                <a class="dropdown-item" href="/views/demos/demo-buttons.html"
+                  >Buttons</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="/views/demos/demo-marg-pad-bord-box.html"
+                  >Margin, Padding, Border, Box Shaddow</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="/views/demos/demo-containers.html"
+                  >Containers</a
+                >
+                <a class="dropdown-item" href="/views/demos/demo-grid.html"
+                  >'Grid' Layout</a
+                >
+              </div>
+            </li>
+
+            <!-- Synthesis Links -->
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Get in Touch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
               <a
-                class="dropdown-item"
-                href="/views/demos/demo-marg-pad-bord-box.html"
-                >Margin, Padding, Border, Box Shaddow</a
+                class="btn btn-secondary"
+                href="/views/synthesis/book-store.html"
+                >Synthesis: Book Store</a
               >
-              <a class="dropdown-item" href="/views/demos/demo-containers.html"
-                >Containers</a
-              >
-              <a class="dropdown-item" href="/views/demos/demo-grid.html"
-                >'Grid' Layout</a
-              >
-            </div>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/views/synthesis/book-store.html"
-              >Synthesis: Book Store</a
-            >
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </body>
