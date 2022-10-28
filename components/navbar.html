@@ -12,7 +12,9 @@
       <div class="container-xxl">
         <!-- Navbar brand / title; "linked" to Home, currently -->
         <a class="navbar-brand" href="/index.html">
-          <span class="text-secondary fw-bold"> Bootstrap 5 Demos </span>
+          <span class="text-secondary fw-bold">
+            <i class="bi bi-pc-display-horizontal"></i> Bootstrap 5
+          </span>
         </a>
         <!-- Hamburger toggle button for mobile nav -->
         <button
@@ -28,11 +30,8 @@
         </button>
 
         <!-- Navbar links -->
-        <div
-          class="collapse navbar-collapse justify-content-end align-center"
-          id="main-nav"
-        >
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse align-center" id="main-nav">
+          <ul class="navbar-nav me-auto">
             <!-- Drop-Down Menu: DEMOs -->
             <li class="nav-item dropdown">
               <a
@@ -43,7 +42,7 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Bootstrap Demos:
+                Demos:
               </a>
               <div
                 class="dropdown-menu"
@@ -72,23 +71,52 @@
                 >
               </div>
             </li>
-
+            <li></li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
             <!-- Synthesis Links -->
-            <li class="nav-item">
-              <a class="nav-link" href="#reviews">Reviews</a>
+
+            <!-- Drop-Down Menu: Synthesis -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Navigation:
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a
+                  class="dropdown-item"
+                  href="/views/synthesis/book-store.html#pricing"
+                  >Pricing</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="/views/synthesis/book-store.html#reviews"
+                  >Reviews</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="/views/synthesis/book-store.html#contact"
+                  >Get in Touch</a
+                >
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Get in Touch</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pricing">Pricing</a>
-            </li>
+
             <li class="nav-item">
               <a
                 class="btn btn-secondary"
                 href="/views/synthesis/book-store.html"
-                >Synthesis: Book Store</a
               >
+                <i class="bi bi-book-half"></i> Book Store
+              </a>
             </li>
           </ul>
         </div>

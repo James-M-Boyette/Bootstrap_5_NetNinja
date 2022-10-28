@@ -336,7 +336,7 @@
       <section id="reviews" class="bg-light">
         <div class="container-lg">
           <div class="text-center">
-            <h2>Book Reviews</h2>
+            <h2><i class="bi bi-stars"></i> Book Reviews</h2>
             <p class="lead">What my students have said about the book...</p>
           </div>
 
@@ -344,7 +344,14 @@
             <div class="col-lg-8">
               <div class="list-group">
                 <div class="list-group-item py-3">
-                  <h5 class="mb-1">A must-buy for every aspiring web dev</h5>
+                  <div class="pb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <h5 class="mb-1">A must-buy for every aspiring developer</h5>
                   <p class="mb-1">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Tenetur error veniam sit expedita est illo maiores neque
@@ -354,7 +361,14 @@
                   <small>Review by Mario</small>
                 </div>
                 <div class="list-group-item py-3">
-                  <h5 class="mb-1">A must-buy for every aspiring web dev</h5>
+                  <div class="pb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <h5 class="mb-1">100% SOLID 💪 Intro to web dev</h5>
                   <p class="mb-1">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Tenetur error veniam sit expedita est illo maiores neque
@@ -364,7 +378,14 @@
                   <small>Review by Mario</small>
                 </div>
                 <div class="list-group-item py-3">
-                  <h5 class="mb-1">A must-buy for every aspiring web dev</h5>
+                  <div class="pb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <h5 class="mb-1">You gotta read this !!!!!!!!</h5>
                   <p class="mb-1">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Tenetur error veniam sit expedita est illo maiores neque
@@ -374,7 +395,14 @@
                   <small>Review by Mario</small>
                 </div>
                 <div class="list-group-item py-3">
-                  <h5 class="mb-1">A must-buy for every aspiring web dev</h5>
+                  <div class="pb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <h5 class="mb-1">So good! Would buy again ....</h5>
                   <p class="mb-1">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Tenetur error veniam sit expedita est illo maiores neque
@@ -384,7 +412,14 @@
                   <small>Review by Mario</small>
                 </div>
                 <div class="list-group-item py-3">
-                  <h5 class="mb-1">A must-buy for every aspiring web dev</h5>
+                  <div class="pb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <h5 class="mb-1">🤩 Can't say enough 🤩</h5>
                   <p class="mb-1">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Tenetur error veniam sit expedita est illo maiores neque
@@ -400,6 +435,74 @@
       </section>
 
       <!-- contact form -->
+      <!-- form-control, form-label, form-select, input-group, input-group-text -->
+      <section id="contact">
+        <div class="container-lg">
+          <div class="text-center">
+            <h2>Get in Touch</h2>
+            <p class="lead">
+              Questions to ask? Fill out the form to contact me directly...
+            </p>
+          </div>
+          <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+              <form>
+                <label for="email" class="form-label">Email address:</label>
+                <div class="input-group mb-4">
+                  <span class="input-group-text">
+                    <i class="bi bi-envelope-fill text-secondary"></i>
+                  </span>
+                  <input
+                    type="text"
+                    id="email"
+                    class="form-control"
+                    placeholder="e.g. mario@example.com"
+                  />
+                </div>
+                <label for="name" class="form-label">Name:</label>
+                <div class="mb-4 input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-person-fill text-secondary"></i>
+                  </span>
+                  <input
+                    type="text"
+                    id="name"
+                    class="form-control"
+                    placeholder="e.g. Mario"
+                  />
+                </div>
+                <label for="subject" class="form-label"
+                  >What is your question about?</label
+                >
+                <div class="mb-4 input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-chat-right-dots-fill text-secondary"></i>
+                  </span>
+                  <select class="form-select" id="subject">
+                    <option value="pricing" selected>Pricing query</option>
+                    <option value="content">Content query</option>
+                    <option value="other">Other query</option>
+                  </select>
+                </div>
+                <div class="mb-4 mt-5 form-floating">
+                  <textarea
+                    class="form-control"
+                    id="query"
+                    style="height: 140px"
+                    placeholder="query"
+                  ></textarea>
+                  <label for="query">Your query...</label>
+                </div>
+                <div class="mb-4 text-center">
+                  <button type="submit" class="btn btn-secondary">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- get updates / modal trigger -->
       <!-- _ -->

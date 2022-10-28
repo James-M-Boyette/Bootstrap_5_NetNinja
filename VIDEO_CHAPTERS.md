@@ -61,11 +61,13 @@ This is a list of the chapter topics included in this tutorial series, for quick
 
 0. "Accordians" ... _->_ _Synthesis 'Inside the Book...' section_
 
-## Video #12, "The Composition API, pt. 2"
+## Video #12, "List Groups"
 
-1. "Lifecycle Hooks" _->_ _(8:17)_
-2. "Fetching Data in Setup" _->_ _(14:12)_
-3. "Reusable Composables" _->_ _(25:20)_
+0. "List Groups" ... _->_ _Synthesis 'Reviews List' section_
+
+## Video #13, "Bootstrap Icons"
+
+0. "Icons" ... _->_ _Synthesis 'Reviews List' section_
 
 ## Video #13
 
