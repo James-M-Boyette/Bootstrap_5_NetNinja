@@ -91,21 +91,21 @@ This is a list of the chapter topics included in this tutorial series, for quick
 
 ## Video #19, "Customizing Bootstrap"
 
-> Rewatch this later for info ...
+> I need to rewatch this later - skipped for now, for expediency ...
 
-0. ""
+<!-- 0. ""
 1. "" _->_ _(0:00)_
 2. "" _->_ _(0:00)_
 3. "" _->_ _(0:00)_
 4. "" _->_ _(0:00)_
 5. "" _->_ _(0:00)_
-6. "" _->_ _(0:00)_
+6. "" _->_ _(0:00)_ -->
 
 ## Video #20, "Tabs"
 
 0. "Dropdowns" ... _->_ _Demo-tabs_
 
-## Video #13
+<!-- ## Video #13
 
 0. ""
 1. "" _->_ _(0:00)_
@@ -113,4 +113,4 @@ This is a list of the chapter topics included in this tutorial series, for quick
 3. "" _->_ _(0:00)_
 4. "" _->_ _(0:00)_
 5. "" _->_ _(0:00)_
-6. "" _->_ _(0:00)_
+6. "" _->_ _(0:00)_ -->
